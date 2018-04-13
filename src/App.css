@@ -1,7 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+.tuts-wrapper {
+  border-right: solid 2px #999;
+}
 .tuts {
+  padding: 5px;
+  font-size: .8em;
+  text-transform: uppercase;
   width: 100px;
-  height: 20px;
-  border: solid 1px #444;
+  height: 24px;
+  border-bottom: solid 1px #444;
+  background: #ccc;
+  color: #444;
+  border-right: solid 2px tomato;
 }
 
 .tuts:focus {
@@ -10,8 +22,43 @@
 
 .tuts.black {
   /* position: absolute; */
-  width: 100px;
-  height: 20px;
   color: #999;
   background: #333;
+}
+
+.header {
+  height: 50px;
+  background: #333;
+}
+body {
+  background: #333;
+  color: #999;
+}
+
+.roll-wrapper {
+  border: solid 1px #999;
+}
+
+.roll-row {
+  border-bottom: solid 1px #444;
+  min-width: 500px;
+  display: flex;
+}
+.roll-cell {
+  border-right: solid 1px #444;
+  height: 24px;
+  width: 24px;
+}
+.roll-cell:hover {
+  background: lightsalmon;
+  opacity: .3;
+}
+
+.roll-cell.active {
+  background: lightsalmon;
+}
+.line {
+  display: flex;
+  overflow: auto;
+  min-width: 100%;
 }
