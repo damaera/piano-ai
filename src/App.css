@@ -1,0 +1,17 @@
+.tuts {
+  width: 100px;
+  height: 20px;
+  border: solid 1px #444;
+}
+
+.tuts:focus {
+  opacity: .5;
+}
+
+.tuts.black {
+  /* position: absolute; */
+  width: 100px;
+  height: 20px;
+  color: #999;
+  background: #333;
+}
